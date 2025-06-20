@@ -6,7 +6,7 @@ async function getCountryByName(counryName) {
     console.log('Fetching country data from:', url);
 
     try {
-        const response = await axios.get('https://restcountries.com/v3.1/name/'+counryName);
+        const response = await axios.get(url);
         
         console.log('Country data fetched successfully:', response.data);
 
